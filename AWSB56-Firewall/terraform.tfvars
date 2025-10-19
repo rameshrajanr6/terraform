@@ -1,0 +1,6 @@
+vpc-cidr-block="192.168.0.0/16"
+public-subnet-cidr="192.168.1.0/24"
+private-subnet-cidr="192.168.2.0/24"
+vpc-region="us-east-1"
+public-subnet-az="us-east-1a"
+private-subnet-az="us-east-1a"
