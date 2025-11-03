@@ -1,17 +1,10 @@
-provider "aws" {
-  region = "us-east-1"
-  default_tags {
-    tags = {
-        Env= "Dev"
-    }
-  }
+resource "random_id" "s3_id" {
+  byte_length=2
 }
 
-module "finance_bucket"{
-    count=1
-    source="./s3-module"
-    tags = {
-      Team="finance"
-      
-    }
+resource "aws_s3_bucket" "devops_bucket" {
+  bucket="prod-bucket-${random_id.s3_id.hex}"
+  tags = {
+    Name= var.s3tag
+  }
 }
