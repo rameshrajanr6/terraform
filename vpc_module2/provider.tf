@@ -1,4 +1,4 @@
-provider "aws" {
-    region = var.vpc-region
-    
-}
+#provider "aws" {
+#    region = var.vpc-region
+#    
+#}
