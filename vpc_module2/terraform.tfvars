@@ -20,3 +20,4 @@
 # az-east-1a="us-east-1a"
 # az-east-1b="us-east-1b"
 # az-east-1c="us-east-1c"
+# bicktname=prod-bucket-95e8
